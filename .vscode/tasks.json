@@ -12,7 +12,7 @@
 			"type": "process",
 			"problemMatcher": "$msCompile",
 			"options": {
-				"cwd": "${workspaceFolder}/samples/SqlExtensionSamples"
+				"cwd": "${workspaceFolder}/samples"
 			}
 		},
 		{

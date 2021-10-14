@@ -1,0 +1,42 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "C# App with Azure SQL",
+  "steps": [
+    {
+      "file": "samples/Database/Products.sql",
+      "description": "Define Products table in Azure SQL database which stores all the product details such as ProductId, Name and Cost.",
+      "line": 5,
+      "selection": {
+        "start": {
+          "line": 1,
+          "character": 1
+        },
+        "end": {
+          "line": 5,
+          "character": 2
+        }
+      }
+    },
+    {
+      "file": "samples/InputBindingSamples/GetProducts.cs",
+      "description": "In this GetProducts.cs file, we use SELECT statement to retrieve the Products where Cost is at a certain value. You can change the filter to implement other logic such as filtering for Cost higher than a certain value, or filtering based on a product Name.",
+      "line": 21,
+      "selection": {
+        "start": {
+          "line": 18,
+          "character": 12
+        },
+        "end": {
+          "line": 21,
+          "character": 66
+        }
+      }
+    },
+    {
+      "file": "samples/local.settings.json",
+      "description": "Configure database connection string. Example: Server=tcp:mssqlgirl.database.windows.net,1433;Initial Catalog=WideWorldImporters;Persist Security Info=False;User ID={your_username};MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Authentication=\"Active Directory Integrated\";\n\n",
+      "line": 6
+    }
+  ],
+  "ref": "main"
+}
